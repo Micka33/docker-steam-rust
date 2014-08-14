@@ -1,7 +1,8 @@
 docker-steam-rust
 =================
 
-A docker with the rust dedicated server preconfigured (based on [docker-steam](https://github.com/Micka33/docker-steam))
+A docker with the [Rust](http://store.steampowered.com/app/252490/) dedicated server preconfigured (based on [docker-steam](https://github.com/Micka33/docker-steam))
+*Note: Currenlty, you need a beta password to run a Rust dedicated server.*
 
 #docker-steam
 
