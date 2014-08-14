@@ -5,8 +5,11 @@ CMD       ["/sbin/my_init"]
 
 # SteamCMD is a 32-bit binary, 32-bit libraries are required -- Seriously?
 RUN       dpkg --add-architecture i386
+# We add these two repo for libglu
+RUN 	    (echo "deb http://fr.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list) && \
+          (echo "deb-src http://fr.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list)
 RUN       apt-get -y update
-RUN       apt-get -y install lib32gcc1 wget
+RUN       apt-get -y install lib32gcc1 libglu1-mesa libxcursor1 wget
 
 WORKDIR   /etc/service/steamcmd
 
