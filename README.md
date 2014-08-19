@@ -35,7 +35,7 @@ sudo docker build -t myrustserver ./docker_files
 ## Run it
 
 ```bash
-sudo docker run -d -p 27011:27015 -p 27011:27015/udp -v `pwd`/mounted:/root/mounted myrustserver /sbin/my_init  -- bash -l
+sudo docker run -d -p 27011:27015 -p 27011:27015/udp -v `pwd`/mounted:/root/mounted myrustserver
 ```
 
 *To inspect/debug*

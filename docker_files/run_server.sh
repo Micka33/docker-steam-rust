@@ -8,4 +8,4 @@ then
 fi
 
 
-exec ./rust_server.x86_64 -batchmode -hostname "Wine'Not's Rust Server (WNRS)" -port 27015 -ip 0.0.0.0 -datadir "serverdata/"
+exec ./RustDedicated -batchmode +server.hostname "Wine'Not's Rust Server (WNRS)" +server.port 27015 +server.identity "serverdatas" +server.seed 1111111111
