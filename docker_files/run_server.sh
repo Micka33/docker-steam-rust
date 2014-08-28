@@ -8,4 +8,4 @@ then
 fi
 
 
-exec ./RustDedicated -batchmode +server.hostname "Wine'Not's Rust Server (WNRS)" +server.port 27015 +server.identity "serverdatas" +server.seed 1111111111
+exec ./RustDedicated -batchmode +server.hostname "Experimental/Vanilla/WO WIPE" +server.port 27015 +server.identity "serverdatas" +server.seed 1111111111
