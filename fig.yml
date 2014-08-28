@@ -1,0 +1,9 @@
+#sudo docker run -d -p 27011:27015 -p 27011:27015/udp -v `pwd`/mounted:/root/mounted myrustserver
+
+myrustserver:
+  build: ./docker_files
+  volumes:
+    - ./mounted:/root/mounted
+  ports:
+    - "0.0.0.0:27011:27015"
+    - "0.0.0.0:27011:27015/udp"
